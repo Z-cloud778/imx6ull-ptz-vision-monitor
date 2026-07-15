@@ -1,0 +1,57 @@
+# ==============================================
+#  Project: IMX6ULL-PTZ-Vision-Monitor
+#  Author: Z-cloud778
+#  Date: 2026-07-14
+#  Desc: Qt上位机 + STM32下位机 开源项目忽略配置
+# ==============================================
+
+# Qt build files
+*.o
+*.obj
+*.moc
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+Makefile
+.qmake.stash
+
+# Build directories
+build/
+debug/
+release/
+Debug/
+Release/
+
+# Generated binaries
+security_panel
+*.exe
+
+# Qt Creator
+*.pro.user
+*.pro.user.*
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Sensitive config
+mqtt_config.h
+*.key
+*.pem
+*.crt
+*.password
+
+# STM32 Keil / CubeIDE 
+stm32_ptz_driver/Objects/
+stm32_ptz_driver/Listings/
+stm32_ptz_driver/*.axf
+stm32_ptz_driver/*.hex
+stm32_ptz_driver/*.bin
+stm32_ptz_driver/*.uvoptx
+stm32_ptz_driver/*.ioc
+stm32_ptz_driver/Debug/
+stm32_ptz_driver/Release/
